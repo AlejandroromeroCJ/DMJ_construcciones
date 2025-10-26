@@ -1,11 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DMJ Construcciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
+  <header class="hdr">
+    <div class="wrap">
+      <a class="brand" href="#home">
+        <img src="img/DMJ construcciones.png" alt="DMJ Construcciones" class="logo">
+        <div class="txt">
+          <span class="big">DMJ</span>
+          <span class="small">CONSTRUCCIONES</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="icons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="soc">IG</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" class="soc">FB</a>
+        <button id="menuBtn" class="menuBtn" aria-label="menu">☰</button>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Construimos tus ideas<br><span>con garantía y profesionalismo</span></h1>
+        <p>Proyectos residenciales, comerciales y asesoramiento técnico.</p>
+        <div class="cta">
+          <a href="#projects" class="btn">Ver proyectos</a>
+          <a href="#contact" class="btn ghost">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-deco"></div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="wrap grid-2">
+        <div>
+          <h2>Quiénes somos</h2>
+          <p>DMJ Construcciones es una empresa dedicada a la ejecución y dirección de obras, reformas y mantenimiento. Nos enfocamos en calidad, seguridad y cumplimiento de tiempos.</p>
+          <ul class="vals">
+            <li>Profesionalismo</li>
+            <li>Responsabilidad</li>
+            <li>Calidad</li>
+          </ul>
+        </div>
+        <div class="img-card">
+          <div class="img-placeholder">Imagen</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt reveal">
+      <div class="wrap">
+        <h2>Servicios</h2>
+        <div class="services grid-3">
+          <div class="card hover">
+            <div class="ic">🏗️</div>
+            <h3>Obras Nuevas</h3>
+            <p>Construcción llave en mano con control de calidad en cada etapa.</p>
+          </div>
+          <div class="card hover">
+            <div class="ic">🔧</div>
+            <h3>Refacciones</h3>
+            <p>Remodelaciones y refacciones residenciales y comerciales.</p>
+          </div>
+          <div class="card hover">
+            <div class="ic">🧾</div>
+            <h3>Asesoría Técnica</h3>
+            <p>Dirección técnica, presupuestos y planos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="wrap">
+        <h2>Proyectos</h2>
+        <div class="carousel" id="carousel">
+          <div class="slides" id="slides">
+            <div class="slide" style="background-image:url('proj1.jpg')"></div>
+            <div class="slide" style="background-image:url('proj2.jpg')"></div>
+            <div class="slide" style="background-image:url('proj3.jpg')"></div>
+          </div>
+          <button class="arrow prev" id="prev">‹</button>
+          <button class="arrow next" id="next">›</button>
+          <div class="dots" id="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt reveal">
+      <div class="wrap grid-2">
+        <div>
+          <h2>Contacto</h2>
+          <p>Dejanos tu mensaje y te contactamos rápidamente.</p>
+          <form id="form">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo" required>
+            <textarea name="msg" placeholder="Mensaje" rows="5" required></textarea>
+            <div class="frm-row">
+              <button type="submit" class="btn">Enviar</button>
+              <a class="btn ghost" href="tel:+549000000000">Llamar</a>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h3>Sede</h3>
+          <p>Dirección ejemplo 123, Ciudad.</p>
+          <div class="map">Mapa embebido</div>
+          <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="soc big">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="soc big">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div>© <span id="yr"></span> DMJ Construcciones</div>
+      <div class="ftr-links">
+        <a href="#privacy">Política de privacidad</a>
+        <a href="#terms">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
