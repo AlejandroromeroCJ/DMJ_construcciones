@@ -6,6 +6,7 @@
   <title>DMJ Construcciones</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Styles.css">
+  
 </head>
 <body>
   <header class="hdr">
@@ -85,18 +86,44 @@
       </div>
     </section>
 
+    <section></section>
+      <div class="carousel">
+      <div class="slides">
+        <img src="img/losa.jpg" alt="Construcción 1">
+        <img src="img/pared.jpg" alt="Construcción 2">
+        <img src="img/techo.jpg" alt="Construcción 3">
+      </div>
+
+      <!-- <div class="nav">
+        <button id="prev"></button>
+        <button id="next"></button>
+      </div> -->
+    </div>
+
+    <div class="comentarios">
+      <h2>Dejanos tu comentario</h2>
+      <form id="formComentario">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <textarea id="mensaje" placeholder="Escribí tu comentario..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="lista-comentarios" id="listaComentarios"></div>
+    </div>
+  </section>
+
+
     <section id="projects" class="section reveal">
       <div class="wrap">
         <h2>Proyectos</h2>
         <div class="carousel" id="carousel">
           <div class="slides" id="slides">
-            <div class="slide" style="background-image:url('proj1.jpg')"></div>
-            <div class="slide" style="background-image:url('proj2.jpg')"></div>
-            <div class="slide" style="background-image:url('proj3.jpg')"></div>
+              <img src="img/proy1.jpg" alt="Proyecto 1">
+              <img src="img/proy2.jpg" alt="Proyecto 2">
+              <img src="img/proy3.jpg" alt="Proyecto 3">
           </div>
           <button class="arrow prev" id="prev">‹</button>
           <button class="arrow next" id="next">›</button>
-          <div class="dots" id="dots"></div>
         </div>
       </div>
     </section>
